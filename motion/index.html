@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tyler Dunham - Motion</title>
+    <title>Motion — Tyler Dunham</title>
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
@@ -12,43 +12,35 @@
         TYLER DUNHAM<span> / PHOTOGRAPHY</span>
       </a>
       <nav class="site-nav" style="display:flex">
-      <a href="../index.html#work">Work</a>
-      <a href="../index.html#about">About</a>
-      <a href="../index.html#contact">Contact</a>
-    </nav>
-  </header>
-  <main class="section-shell">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="section-shell">
       <div class="gallery-frame">
         <div class="gallery-header">
+          <p class="eyebrow">Selected work · 10 images</p>
           <h1 class="gallery-title">Motion</h1>
           <p class="gallery-lede">Speed, grit, and the quiet seconds in between.</p>
         </div>
-        <div class="gallery-grid feature-layout">
-          <figure>
-            <img src="images/race-01.jpg" alt="Cyclist on a road">
-          </figure>
-          <figure>
-            <img src="images/race-02.jpg" alt="Bicycle detail">
-          </figure>
-          <figure>
-            <img src="images/race-03.jpg" alt="Cyclists racing together">
-          </figure>
-        </div>
-        <div class="gallery-grid">
-          <figure class="wide">
-            <img src="images/race-04.jpg" alt="Cyclist during a race">
-          </figure>
-          <figure>
-            <img src="images/race-05.jpg" alt="Bike race detail">
-          </figure>
-          <figure>
-            <img src="images/race-06.jpg" alt="Bike race detail">
-          </figure>
-        </div>
+        <div id="test-gallery" class="gallery-grid modular-gallery" aria-live="polite"></div>
       </div>
-  </main>
-  <footer class="site-footer section-shell">
-    <a class="text-link" href="../index.html">← Back home</a>
-  </footer>
-</body>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="text-link" href="../index.html">← Back home</a>
+    </footer>
+
+    <div class="lightbox" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <button class="lightbox-prev" type="button" aria-label="Previous image">←</button>
+      <img class="lightbox-image" alt="">
+      <button class="lightbox-next" type="button" aria-label="Next image">→</button>
+      <p class="lightbox-count"></p>
+    </div>
+
+    <script src="../js/gallery-test.js"></script>
+  </body>
 </html>
